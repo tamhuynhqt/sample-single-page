@@ -1,0 +1,32 @@
+.testimonial{
+    background: $secondary;
+    padding: 5px;
+}
+.testimonial-item{
+    color: $light-white;
+    text-align: center;
+    margin: 10px 8px;
+}
+.testimonial-quote{
+    line-height: 22px;
+}
+.testimonial-quote::before{
+    font-family: $font-awesome;
+    font-size: 0.5em;
+    font-weight: 600;
+    vertical-align: text-top;
+    content: "\f10d";
+}
+.testimonial-quote::after{
+    content: "\f10e";
+    font-size: 0.5em;
+    font-family: $font-awesome;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+.testimonial-name{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: $tan;
+}

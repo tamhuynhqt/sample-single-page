@@ -1,0 +1,29 @@
+.contact{
+    background: $secondary;
+    text-align: center;
+        p{
+        color: $light-white;
+        font-size: 1em;
+        }
+   
+   .map-container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+    position: relative;
+   }
+       
+   }
+   .map-heading{
+       margin-top: -5px;
+       margin-bottom: 5px;
+       padding:0;
+       text-align: left;
+   }
+.contact-info{
+    padding-top: 10px;
+
+    @include small-and-above{
+    margin: 50px 0;
+        }
+}

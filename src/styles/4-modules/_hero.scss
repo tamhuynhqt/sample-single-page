@@ -1,0 +1,38 @@
+/***************************
+Hero Modules
+***************************/
+.hero {
+  text-align: center;
+}
+.hero-primary {
+  background-color: $brown;
+  color: $text-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include small-and-above {
+    padding-top: 30px;
+  }
+}
+.hero-primary.bg-image > img {
+  opacity: 0.95;
+}
+.hero-body {
+  position: relative;
+}
+.hero-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 2.625em;
+}
+.hero-subtitle {
+  margin: 10px 30px;
+  font-size: 1.25em;
+  font-weight: normal;
+  @include small-and-above {
+    margin: 220px 80px 100px 80px;
+    font-size: 1.5em;
+  }
+}
+.hero-subtitle + button {
+  margin-top: 25px;
+}

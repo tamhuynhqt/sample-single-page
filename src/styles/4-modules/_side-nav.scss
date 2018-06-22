@@ -1,0 +1,28 @@
+.side-nav{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    @include extra-small-only{
+        display: none;
+    }
+}
+.sidelinks{
+    list-style: none;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+
+    li{
+        position: relative;
+        display: block;
+    }
+   
+      span {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: none;
+        letter-spacing: 0;
+      }
+}

@@ -1,0 +1,32 @@
+/*
+ Footer
+*/
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: fade-out(white, .7);
+    background-color: $dark-brown;
+    p {
+        font-size: 11px;
+        margin: 0;
+    }
+    ul {
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-left: 0;
+  list-style: none;
+        li {
+            display: inline-block;
+            a {
+                font-size: 11px;
+                color: fade-out(white, .7);
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
