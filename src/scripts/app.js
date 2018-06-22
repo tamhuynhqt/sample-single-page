@@ -1,6 +1,19 @@
 //@koala-prepend "vendors/jquery-3.3.1.min.js"
 //@koala-prepend "vendors/slick.min.js"
 
+window.initMap= function() {
+    var map;
+var myLatlng = new google.maps.LatLng(-37.8070,144.9554);
+    map = new google.maps.Map(document.getElementById('contact-map'), {
+      center: myLatlng,
+      zoom: 14
+    });
+    var marker = new google.maps.Marker({
+        position: myLatlng
+    
+    });
+    marker.setMap(map);
+  }
   
 $(document).ready(function () {
     $(".testimonials").slick({
@@ -55,11 +68,5 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: "0" },  500);
   });
 
-  var map;
-  window.initMap= function() {
-      map = new google.maps.Map(document.getElementById('contact-map'), {
-        center: {lat: -37.8070, lng: 144.9554},
-        zoom: 8
-      });
-    }
+
 });
